@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "./ext-dist/",
+    "sourceMap": true,
+    "strict": true,
+    "module": "es6",
+    "target": "es5",
+    "jsx": "react"
+  }
+}

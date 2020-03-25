@@ -4,15 +4,16 @@
   "version": "1.0",
   "description": "Play the mustaches drinking game on netflix with friends.",
   "icons": {
-    "48": "icons/border-48.png"
+    "48": "assets/icon-48.png"
   },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "browser_action": {
-    "default_icon": "icons/border-48.png",
+    "default_icon": "assets/icon-48.png",
     "default_title": "NetflixMustaches",
-    "default_popup": "popup/popup.html"
+    "default_popup": "popup.html"
   },
   "background": {
-    "scripts": ["background-script.js"]
+    "scripts": ["background.js"]
   },
   "content_scripts": [
     {
@@ -20,14 +21,11 @@
         "*://*.netflix.com/*"
       ],
       "js": [
-        "content-script.js"
+        "content.js"
       ]
     }
   ],
-  "permissions": [
-    "menus"
-  ],
   "web_accessible_resources": [
-    "images/mustache.png"
+    "assets/mustache.png"
   ]
 }
