@@ -1,13 +1,12 @@
 // This is configuration for the extension as we don't use webpack for the server code.
 const path = require('path');
-const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 
-const sourceRootPath = path.join(__dirname, 'extension');
-const distRootPath = path.join(__dirname, 'extension-dist');
+const sourceRootPath = path.join(__dirname, 'src');
+const distRootPath = path.join(__dirname, 'dist');
 const nodeEnv = process.env.NODE_ENV ? process.env.NODE_ENV : 'development';
 
 
