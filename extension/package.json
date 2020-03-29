@@ -9,6 +9,8 @@
     "watch": "NODE_ENV=watch webpack -d"
   },
   "dependencies": {
+    "@material-ui/core": "^4.9.8",
+    "@material-ui/icons": "^4.9.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
